@@ -80,7 +80,7 @@ function App() {
 
   return (
     <div className="weather-app">
-      <div className="container ">
+      <div className="">
         {/* Search Bar */}
         <div className="d-flex justify-content-center mb-4 ">
           <form onSubmit={handleSearch} className="search-bar search-container">
@@ -93,6 +93,7 @@ function App() {
                 placeholder="Enter city name"
                 className="form-control"
               />
+              
               <button 
                 type="submit"
                 className="btn btn-outline-light py-3"

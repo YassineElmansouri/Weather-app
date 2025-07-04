@@ -19,16 +19,13 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-.weather-app {
-  padding: 1rem;
-  max-width: 100%;
-  box-sizing: border-box;
-}
+
 
 /* Header/Search Section */
 .search-container {
   display: flex;
-  gap: 100px;
+  flex-direction: column;
+  gap: 12px;
   margin-bottom: 1.5rem;
   width: 100%;
 }
@@ -272,4 +269,27 @@ body {
   .forecast-day {
     min-width: 120px;
   }
+  .search-container {
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .search-group {
+    flex: 1;
+  }
+  
+  .location-btn-container {
+    width: auto;
+    justify-content: flex-end;
+  }
+  
+  .location-btn {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    max-width: none;
+  }
+  
+  
 }
