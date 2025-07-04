@@ -80,11 +80,11 @@ function App() {
 
   return (
     <div className="weather-app">
-      <div className="container">
+      <div className="container ">
         {/* Search Bar */}
-        <div className="d-flex justify-content-center mb-4">
-          <form onSubmit={handleSearch} className="search-bar">
-            <div className="input-group">
+        <div className="d-flex justify-content-center mb-4 ">
+          <form onSubmit={handleSearch} className="search-bar search-container">
+            <div className="input-group ">
               <input
                 type="text"
                 value={city}
@@ -95,7 +95,7 @@ function App() {
               />
               <button 
                 type="submit"
-                className="btn btn-outline-light"
+                className="btn btn-outline-light py-3"
                 disabled={city === "Locating..."}
               >
                 Search
@@ -104,7 +104,7 @@ function App() {
           </form>
           <button 
             onClick={getUserLocation}
-            className="geolocation-btn"
+            className="location-btn mx-2 p-3"
             title="Use my current location"
           >
             <GeoAltFill size={18} />
