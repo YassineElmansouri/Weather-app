@@ -330,3 +330,123 @@ body, h1, h2, h3, h4, h5, h6, p, span, div, input, button {
 .detail-value {
   font-weight: 600;
 }
+
+/* Add these mobile-specific styles to your existing CSS */
+
+@media (max-width: 576px) {
+  .weather-app {
+    padding: 1rem;
+  }
+
+  .search-bar {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .input-group {
+    flex-wrap: nowrap;
+  }
+
+  .form-control {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+
+  .btn-outline-light, .geolocation-btn {
+    padding: 10px;
+  }
+
+  .geolocation-btn {
+    margin-left: 8px;
+    padding: 10px 12px;
+  }
+
+  .current-weather {
+    padding: 1.5rem 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .city-name {
+    font-size: 1.8rem;
+  }
+
+  .temperature {
+    font-size: 3.5rem;
+  }
+
+  .temperature::after {
+    font-size: 1.5rem;
+    right: -1rem;
+  }
+
+  .weather-condition {
+    font-size: 1.1rem;
+  }
+
+  .weather-condition img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .weather-details {
+    margin-top: 1.5rem;
+  }
+
+  .detail-label {
+    font-size: 0.8rem;
+  }
+
+  .detail-value {
+    font-size: 0.9rem;
+  }
+
+  .forecast {
+    padding: 1rem;
+  }
+
+  .forecast h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .forecast-days {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+  }
+
+  .forecast-day {
+    padding: 1rem 0.5rem;
+  }
+
+  .day-name {
+    font-size: 1rem;
+  }
+
+  .forecast-day img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .day-temp {
+    font-size: 1.1rem;
+  }
+
+  .day-condition {
+    font-size: 0.8rem;
+  }
+}
+
+/* Additional small screen adjustments */
+@media (max-width: 400px) {
+  .forecast-days {
+    grid-template-columns: 1fr;
+  }
+
+  .temperature {
+    font-size: 3rem;
+  }
+
+  .weather-details .col-4 {
+    padding: 0 5px;
+  }
+}
